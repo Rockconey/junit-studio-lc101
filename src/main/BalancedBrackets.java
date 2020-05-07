@@ -23,13 +23,26 @@ public class BalancedBrackets {
      */
     public static boolean hasBalancedBrackets(String str) {
         int brackets = 0;
+        if (str.indexOf("[") > str.indexOf("]") || str.matches(".(\\][a-zA-Z09]?\\]).") || str.matches(".(\\][a-zA-Z0-9]+\\]).") ){
+            brackets = 1;
+        }
+
         for (char ch : str.toCharArray()) {
             if (ch == '[') {
                 brackets++;
             } else if (ch == ']') {
                 brackets--;
             }
+
         }
         return brackets == 0;
+
+
+
     }
+
+//    public static boolean bracketOrder(String str) {
+//        return str.indexOf("[") < str.indexOf("]");
+//    }
+
 }
