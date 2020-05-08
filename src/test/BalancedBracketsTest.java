@@ -78,7 +78,7 @@ public class BalancedBracketsTest {
 
 //    @Test
 //    public void mixedBracket12() {
-//        assertFalse(BalancedBrackets.hasBalancedBrackets("[][[]]"));
+//        assertTrue(BalancedBrackets.hasBalancedBrackets("[][[]]"));
 //    }
 
 }
