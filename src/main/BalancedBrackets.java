@@ -41,8 +41,4 @@ public class BalancedBrackets {
 
     }
 
-//    public static boolean bracketOrder(String str) {
-//        return str.indexOf("[") < str.indexOf("]");
-//    }
-
 }
